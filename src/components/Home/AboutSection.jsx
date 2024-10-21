@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../../assets/RESUME.jpg"
 
 function calculateAge(birthdate) {
   const today = new Date();
@@ -43,7 +44,7 @@ export default function AboutSection() {
       <div className="flex max-md:flex-col gap-4 items-center">
         <div className="avatar">
           <div className="size-52 rounded-xl shadow-xl">
-            <img src="RESUME.jpg" alt="Resume 2x2" />
+            <img src={resume} alt="Resume 2x2" />
           </div>
         </div>
         <div className="container space-y-4">

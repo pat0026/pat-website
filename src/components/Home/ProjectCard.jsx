@@ -1,13 +1,14 @@
 import React from "react";
+import homelab from "../../assets/homelab.jpg"
 
 export default function ProjectCard() {
   return (
     <div className="card lg:card-side h-96 lg:h-64 bg-base-100 shadow-xl">
-      <figure>
+      <figure className="size-full">
         <img
-          src="homelab.jpg"
-          alt="Album"
-        //   className="w-full lg:h-full"
+          src={homelab}
+          alt="Homelab"
+          // className="w-full lg:h-full"
           className="size-full"
         />
       </figure>

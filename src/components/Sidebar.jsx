@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import resume from "../assets/RESUME.jpg"
 import React from "react";
 
 export default function Sidebar({ closeSidebar }) {
@@ -8,7 +9,7 @@ export default function Sidebar({ closeSidebar }) {
       {/* Sidebar content here */}
       <div className="avatar mt-12 self-center">
         <div className="ring-primary ring-offset-base-100 size-36 rounded-full ring-offset-2 ring-4">
-          <img src="RESUME.jpg" alt="Resume 2x2" />
+          <img src={resume} alt="Resume 2x2" />
         </div>
       </div>
       <div className="container flex flex-col mx-auto gap-2">
