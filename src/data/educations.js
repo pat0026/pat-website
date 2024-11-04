@@ -24,7 +24,7 @@ export default [
   {
     subject: "Electronics Technology",
     year: "2013-2016",
-    location: "Manuel S. Enverga University Foundation, Lucena City, PH",
+    location: "MFI Foundation Inc., Pasig City, PH",
     description:
       "I was awarded for 2014 & 2016 Academic Excellence with good moral conduct",
   },
