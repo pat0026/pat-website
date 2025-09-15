@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: winter --default, night --prefersdark;
+}
+
+@theme inline {
+  --font-sans: var(--font-jetbrains-mono);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    @apply scrollbar-hide;
+  }
+}
+
+@utility scrollbar-hide {
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* IE and Edge */
+  -ms-overflow-style: none;
+
+  /* Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility scrollbar-default {
+  /* Firefox */
+  scrollbar-width: auto;
+
+  /* IE and Edge */
+  -ms-overflow-style: auto;
+
+  /* Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: block;
+  }
+}
+
+:root {
+  --animate-duration: 1000ms;
+  --animate-delay: 500ms;
+  /* --background: #ffffff;
+  --foreground: #171717; */
+}
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+   */
+
+body {
+  font-family: var(--font-jetbrains-mono), Arial, Helvetica, sans-serif;
+}
