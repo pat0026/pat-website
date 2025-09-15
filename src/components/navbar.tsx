@@ -5,7 +5,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const detailsRef = useRef(null);
+  const detailsRef = useRef<HTMLDetailsElement | null>(null);
 
   const toggleDetails = () => {
     console.log(`Toggle button clicked. Before: ${isOpen}`);
@@ -24,8 +24,10 @@ export default function Navbar() {
     const detailsElement = detailsRef.current;
 
     const handleToggle = () => {
-      console.log(`Details toggled. Current state: ${detailsElement.open}`);
-      setIsOpen(detailsElement.open); // Sync state with details element
+      if (detailsElement) {
+        console.log(`Details toggled. Current state: ${detailsElement.open}`);
+        setIsOpen(detailsElement.open); // Sync state with details element
+      }
     };
 
     if (detailsElement) {

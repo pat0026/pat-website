@@ -2,7 +2,7 @@ import React from "react";
 import resume from "../../assets/RESUME.jpg"
 import Image from "next/image";
 
-function calculateAge(birthdate) {
+function calculateAge(birthdate: string) {
   const today = new Date();
   const birthDate = new Date(birthdate);
   let age = today.getFullYear() - birthDate.getFullYear();
@@ -20,7 +20,7 @@ function calculateAge(birthdate) {
 }
 
 export default function AboutSection() {
-  const birthdate = "February 26,1997";
+  const birthdate: string = "February 26,1997";
   const age = calculateAge(birthdate);
 
   return (

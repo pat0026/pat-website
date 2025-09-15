@@ -1,11 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { ReactElement } from "react";
 import { skills } from "../../data/skills";
 import Skill from "./skill";
 
 export default function SkillsSection() {
-  const logos = [];
+  const logos: ReactElement[] = [];
   for (const skill in skills) {
     logos.push(
       <Skill
