@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <div className="hero min-h-screen bg-[url(/images/Portfolio_bg.jpg)] bg-fixed bg-[right_-4rem_center]  md:bg-center">
+    <div className="hero min-h-screen bg-[url(/pat-website/images/Portfolio_bg.jpg)] bg-fixed bg-[right_-4rem_center]  md:bg-center">
       <div className="hero-overlay  bg-blend-multiply"></div>
       <div className="hero-content text-slate-100 text-center text-shadow-md text-shadow-slate-600 ">
         <div className="max-w-md ">

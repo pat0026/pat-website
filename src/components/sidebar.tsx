@@ -17,13 +17,13 @@ export default function Sidebar({ closeSidebar }) {
       <div className="container flex flex-col mx-auto gap-2">
         <h1 className="mx-auto">Patrick Christain Caparros</h1>
         <div className="flex mx-auto gap-4 items-center">
-          <a href="https://www.facebook.com/pat00026 " target="_blank">
+          <Link href="https://www.facebook.com/pat00026 " target="_blank">
             <FontAwesomeIcon
               icon={faFacebookF}
               className="rounded-full border-2 size-4 p-2 border-primary"
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.linkedin.com/in/patrick-caparros"
             target="_blank"
           >
@@ -31,7 +31,7 @@ export default function Sidebar({ closeSidebar }) {
               icon={faLinkedinIn}
               className="rounded-full border-2 size-4 p-2 border-primary"
             />
-          </a>
+          </Link>
         </div>
       </div>
       <div>

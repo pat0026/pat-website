@@ -39,7 +39,7 @@ export default function EmailCard() {
             <input
               type="text"
               placeholder="Greetings"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               onChange={handleChange}
               name="subject"
               value={formData.subject}
@@ -52,7 +52,7 @@ export default function EmailCard() {
             <legend className="fieldset-legend">Message</legend>
             <textarea
               placeholder="Anything on your mind?"
-              className="textarea textarea-bordered"
+              className="textarea textarea-bordered w-full"
               onChange={handleChange}
               name="message"
               value={formData.message}
@@ -60,8 +60,8 @@ export default function EmailCard() {
             />
           </fieldset>
         </div>
-        <div className="form-control mt-6">
-          <button className="btn btn-primary" type="submit">
+        <div className="form-control">
+          <button className="btn rounded btn-primary w-full" type="submit">
             Compose
           </button>
         </div>

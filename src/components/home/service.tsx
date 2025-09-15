@@ -14,7 +14,8 @@ export default function Service({ service }) {
     <div ref={ref} className="flex flex-col lg:flex-row p-4 gap-8 items-center">
       <FontAwesomeIcon
         icon={service.icon}
-        className={`rounded-full border-2 size-16 p-4  ${
+        size="3x"
+        className={`rounded-full border-2  p-4  ${
           inView ? "animate__animated animate__fadeIn" : "opacity-0"
         } `}
       />

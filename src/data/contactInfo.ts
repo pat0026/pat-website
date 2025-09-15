@@ -8,7 +8,7 @@ export const contactInfo = {
   website: "pat0026.github.io/pat-portfolio",
   phone: "+63 9458297391",
   email: " patrick.caparros026@gmail.com",
-  location: "Tayabas City",
+  location: "Taguig City",
 };
 
 export const contactInfoWithIcon = [

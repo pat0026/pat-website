@@ -5,6 +5,7 @@ export default function ContactInfo({ contactInfo: contactInfo }) {
   return (
     <div className="flex py-2 gap-4 align-middle">
       <FontAwesomeIcon
+        size="2x"
         icon={contactInfo.icon}
         className="rounded-full border-2 size-6 p-2 mt-0.5"
       />

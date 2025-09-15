@@ -1,5 +1,16 @@
 export default [
   {
+    subject: "Senior Software Engineer",
+    year: "Dec. 10,2024 - Present",
+    location: "eData Services Inc.",
+    description_list: [
+      "Design and develop application interfaces as small standalone functionality and as part of larger integrated applications.",
+      "Develop SQL functions and design database objects to support application functionality.",
+      "Working knowledge of C#, Javascript, Typescript and React",
+      "oftware Support and Development with high customer service and technical expertise, which can work independently with less supervision",
+    ],
+  },
+  {
     subject: "Engine Engineer",
     year: "Apr. 8,2024 - Oct. 8,2024",
     location: "Trend Micro Inc.",
