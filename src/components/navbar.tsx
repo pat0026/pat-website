@@ -66,12 +66,12 @@ export default function Navbar() {
         </label>
       </div>
       <div className="mx-2 flex-1 px-2">
-        <a
-          href="#"
+        <Link
+          href="/home"
           className="btn btn-ghost no-animation text-xl hover:bg-transparent "
         >
           Patrick's Website
-        </a>
+        </Link>
       </div>
       <div className="hidden flex-none lg:block">
         <ul className="menu menu-horizontal">
@@ -92,7 +92,10 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/home/#background_section" onClick={toggleDetails}>
+                  <Link
+                    href="/home/#background_section"
+                    onClick={toggleDetails}
+                  >
                     Background
                   </Link>
                 </li>
