@@ -12,9 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: denoland/setup-deno@v2
+      - name: Setup deno
+        uses: denoland/setup-deno@v2
         with:
-          deno-version: lts
+          deno-version: "~2.5"
           cache: true
       - name: Build static next.js app
         run: |
