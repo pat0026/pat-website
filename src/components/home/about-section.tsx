@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/RESUME.jpg"
+import resume from "../../assets/RESUME.jpg";
 import Image from "next/image";
 
 function calculateAge(birthdate: string) {
@@ -53,7 +53,8 @@ export default function AboutSection() {
             CI Engineer & Software Developer
           </p>
           <p className="italic max-md:text-center">
-            &quot;Don&apos;t regret what you did but regret what you didn&apos;t do.&quot;
+            &quot;Don&apos;t regret what you did but regret what you didn&apos;t
+            do.&quot;
           </p>
           <div className="flex  max-md:flex-col text-sm">
             <ul className="list-disc pl-6 flex-grow">
@@ -97,13 +98,13 @@ export default function AboutSection() {
         </div>
       </div>
       <p className="text-justify">
-        If I don&apos;t know the solution to the problem I will not hesitate to tell
-        you that I don&apos;t know the answer but I assure you that I will find a way
-        to know what it is in the future. I'm aspiring to join a company that
-        values personal growth, work-life balance and have a healthy environment
-        which I could bond with diverse peers. A company that will show me to
-        become a better software developer. That is why I strive to enhancing my
-        skills towards any company I work with.
+        If I don&apos;t know the solution to the problem I will not hesitate to
+        tell you that I don&apos;t know the answer but I assure you that I will
+        find a way to know what it is in the future. I&apos;m aspiring to join a
+        company that values personal growth, work-life balance and have a
+        healthy environment which I could bond with diverse peers. A company
+        that will show me to become a better software developer. That is why I
+        strive to enhancing my skills towards any company I work with.
       </p>
     </div>
   );

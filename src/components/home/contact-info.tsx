@@ -1,7 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ContactInfoWithIcon } from "@/type/contact-info";
 
-export default function ContactInfo({ contactInfo: contactInfo }) {
+type ContactInfoProps = {
+  contactInfo: ContactInfoWithIcon;
+};
+
+export default function ContactInfo({ contactInfo }: ContactInfoProps) {
   return (
     <div className="flex py-2 gap-4 align-middle">
       <FontAwesomeIcon

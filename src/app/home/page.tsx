@@ -10,7 +10,6 @@ export default function HomePage() {
   return (
     <div>
       <HeroSection />
-      {/* <div class="relative -mt-12 bg-white dark:bg-gray-800 rounded-t-4xl"> */}
       <div className=" p-4 mt-4 mx-auto lg:max-w-screen-lg md:max-w-screen-md  sm:max-w-screen-sm flex flex-col gap-2 ">
         <AboutSection />
         <div className="divider" />

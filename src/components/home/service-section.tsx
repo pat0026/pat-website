@@ -3,7 +3,9 @@ import services from "../../data/services";
 import Service from "./service";
 
 export default function ServicesSection() {
-  const list = services.map((service) => <Service service={service} key={crypto.randomUUID()}/>);
+  const list = services.map((service) => (
+    <Service service={service} key={crypto.randomUUID()} />
+  ));
 
   return (
     <div

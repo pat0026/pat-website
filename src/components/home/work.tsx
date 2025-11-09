@@ -1,4 +1,3 @@
-import React from "react";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TimeItem from "./test-item";
@@ -17,7 +16,7 @@ export default function Work() {
             index !== work.length - 1 && "pb-4"
           } space-y-3`}
         >
-          <TimeItem topic={education} />
+          <TimeItem topic={{ type: "work", value: education }} />
         </div>
         {index !== work.length - 1 && <hr />}
       </li>

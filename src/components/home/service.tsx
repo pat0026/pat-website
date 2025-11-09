@@ -3,8 +3,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useInView } from "react-intersection-observer";
+import { ServiceItem } from "@/type/services";
 
-export default function Service({ service }) {
+type ServiceProps = {
+  service: ServiceItem;
+};
+
+export default function Service({ service }: ServiceProps) {
   const { ref, inView } = useInView({
     triggerOnce: true, // Only trigger animation once
     threshold: 0.8, // Trigger when 10% of the item is in view

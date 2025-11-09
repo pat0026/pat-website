@@ -72,10 +72,14 @@ export default function Sidebar({ closeSidebar }) {
         </li>
 
         <li>
-          <Link href="/projects" onClick={closeSidebar}>Projects</Link>
+          <Link href="/projects" onClick={closeSidebar}>
+            Projects
+          </Link>
         </li>
         <li>
-          <Link href="/blogs" onClick={closeSidebar}>Blogs</Link>
+          <Link href="/blogs" onClick={closeSidebar}>
+            Blogs
+          </Link>
         </li>
       </div>
     </ul>

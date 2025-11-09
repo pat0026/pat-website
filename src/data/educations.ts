@@ -1,4 +1,6 @@
-export default [
+import EducationItem from "@/type/education";
+
+const education: readonly EducationItem[] = [
   {
     subject:
       "ETEEAP - Bachelor of Science: Electronics Engineering (Undergraduate)",
@@ -28,4 +30,6 @@ export default [
     description:
       "I was awarded for 2014 & 2016 Academic Excellence with good moral conduct",
   },
-];
+] as const;
+
+export default education;

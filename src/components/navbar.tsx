@@ -70,7 +70,7 @@ export default function Navbar() {
           href="/home"
           className="btn btn-ghost no-animation text-xl hover:bg-transparent "
         >
-          Patrick's Website
+          Patrick&apos;s Website
         </Link>
       </div>
       <div className="hidden flex-none lg:block">

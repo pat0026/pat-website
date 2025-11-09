@@ -1,5 +1,5 @@
 import React from "react";
-import homelab from "../../assets/homelab.jpg"
+import homelab from "../../assets/homelab.jpg";
 import Image from "next/image";
 
 export default function ProjectCard() {
@@ -15,9 +15,13 @@ export default function ProjectCard() {
       </figure>
       <div className="card-body">
         <h2 className="card-title">HomeLab</h2>
-        <p>Created my very own homelab using proxmox with other open source tools</p>
+        <p>
+          Created my very own homelab using proxmox with other open source tools
+        </p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary" disabled>See more...</button>
+          <button className="btn btn-primary" disabled>
+            See more...
+          </button>
         </div>
       </div>
     </div>
