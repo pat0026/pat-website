@@ -1,4 +1,6 @@
-export default [
+import WorkItem from "@/type/work"
+
+const workItems: readonly WorkItem[] = [
   {
     subject: "Senior Software Engineer",
     year: "Dec. 10,2024 - Present",
@@ -57,4 +59,6 @@ export default [
       "Flexible and adaptable to different environment",
     ],
   },
-];
+] as const;
+
+export default workItems;

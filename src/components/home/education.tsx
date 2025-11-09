@@ -17,7 +17,7 @@ export default function Education() {
             index !== educations.length - 1 && "pb-4"
           } space-y-3`}
         >
-          <TimeItem topic={education} />
+          <TimeItem topic={{ type: "education", value: education }} />
         </div>
         {index !== educations.length - 1 && <hr />}
       </li>

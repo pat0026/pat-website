@@ -1,9 +1,9 @@
 import React from "react";
-import { contactInfoWithIcon } from "../../data/contactInfo";
+import { contactInfosWithIcon } from "../../data/contact-info";
 import ContactInfo from "./contact-info";
 
 export default function ContactCard() {
-  const contactInfos = contactInfoWithIcon.map((contactInfo) => (
+  const contactInfos = contactInfosWithIcon.map((contactInfo) => (
     <ContactInfo contactInfo={contactInfo} key={crypto.randomUUID()}/>
   ));
   return (

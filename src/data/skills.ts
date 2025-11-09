@@ -1,4 +1,6 @@
-export const skills = {
+import { SkillName } from "@/type/skills";
+
+export const skills: Record<SkillName, string> = {
   rust: "devicon-rust-original colored",
   c: "devicon-c-plain colored",
   "c++": "devicon-cplusplus-plain colored",
@@ -16,4 +18,6 @@ export const skills = {
   "react.js": "devicon-react-original colored",
   "solid.js": "devicon-solidjs-plain colored",
   "next.js": "devicon-nextjs-original-wordmark colored",
-};
+} as const;
+
+export default skills;

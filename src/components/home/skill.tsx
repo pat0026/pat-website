@@ -1,7 +1,12 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 
-export default function Skill(props) {
+type SkillProps = {
+  skillName: string;
+  icon: string;
+};
+
+export default function Skill(props: SkillProps) {
   const { ref, inView } = useInView({
     triggerOnce: true, // Only trigger animation once
     threshold: 0.8, // Trigger when 10% of the item is in view
@@ -14,7 +19,7 @@ export default function Skill(props) {
           inView ? "animate__animated animate__fadeInUp" : "opacity-0"
         } `}
       ></i>
-      <p>{props.skill_name}</p>
+      <p>{props.skillName}</p>
     </div>
   );
 }

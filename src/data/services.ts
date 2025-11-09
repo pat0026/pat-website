@@ -1,6 +1,7 @@
+import { ServiceItem } from "@/type/services";
 import { faComputer, faGlobe, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
-export default [
+const services: readonly ServiceItem[] = [
   {
     icon: faComputer,
     name: "Computer Assembly and Repair",
@@ -19,4 +20,6 @@ export default [
     description:
       "I can design basic websites - front end and back end. I will continue to learn more.",
   },
-];
+] as const;
+
+export default services;

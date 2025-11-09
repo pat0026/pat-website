@@ -1,0 +1,19 @@
+// skills.d.ts
+export type SkillName =
+    | "rust"
+    | "c"
+    | "c++"
+    | "python"
+    | "javascript"
+    | "typescript"
+    | "java"
+    | "c#"
+    | "go"
+    | "gitlab"
+    | "github"
+    | "git"
+    | "docker"
+    | "cmake"
+    | "react.js"
+    | "solid.js"
+    | "next.js";

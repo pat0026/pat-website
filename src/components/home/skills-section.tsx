@@ -8,11 +8,7 @@ export default function SkillsSection() {
   const logos: ReactElement[] = [];
   for (const skill in skills) {
     logos.push(
-      <Skill
-        key={crypto.randomUUID()}
-        skill_name={skill}
-        icon={skills[skill]}
-      />
+      <Skill key={crypto.randomUUID()} skillName={skill} icon={skills[skill]} />
     );
   }
 
@@ -25,7 +21,7 @@ export default function SkillsSection() {
         Skills
       </h1>
       <p className="text-justify">
-        I have acquired the set of skills for IC Layout. I'm knowledgeable both
+        I have acquired the set of skills for IC Layout. I&apos;m knowledgeable both
         in hardware and software which is an asset for embedded systems or
         servers. Expert in diverse CI Platforms. Proficient in different
         compiled languages and skillful in different scripting languages.
