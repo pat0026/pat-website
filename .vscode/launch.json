@@ -1,0 +1,102 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "name": "Next.js: debug server-side",
+    //   "type": "node",
+    //   "runtimeExecutable": "C:\\Users\\pat\\.deno\\bin\\deno.EXE",
+    //   "request": "launch",
+    //   "runtimeArgs": ["run",  "-A", "dev" ],
+    //   "skipFiles": ["<node_internals>/**"],
+    //   "env": {
+    //     "NODE_TLS_REJECT_UNAUTHORIZED": "0",
+    //     "NODE_ENV": "development",
+    //     "NODE_OPTIONS": "--inspect-brk"
+    //   },
+    //   "attachSimplePort": 0
+    // },
+    {
+      "name": "Next.js: debug server-side",
+      "type": "node",
+      "request": "attach",
+      "port": 53939,
+      "address": "127.0.0.1",
+      "restart": true,
+      "skipFiles": ["<node_internals>/**"]
+    },
+    // {
+    //       "name": "Next.js: debug server-side",
+    //       "type": "node-terminal",
+    //       "request": "launch",
+    //       "command": "C:\\Users\\pat\\.deno\\bin\\deno.EXE run -A dev ",
+    //       "env": {
+    //         "NODE_TLS_REJECT_UNAUTHORIZED": "0",
+    //         "NODE_ENV": "development",
+    //       },
+    //       "cwd": "${workspaceFolder}"
+    // },
+    {
+      "name": "Next.js: debug client-side",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    // Doesn't work on turbopack, Needs further RND
+    // {
+    //
+    //   "name": "Next.js: debug client-side (Firefox)",
+    //   "type": "firefox",
+    //   "request": "launch",
+    //   "url": "https://localhost:3000",
+    //   "reAttach": true,
+    //   "webRoot": "${workspaceFolder}",
+    //   "pathMappings": [
+    //     {
+    //       "url": "webpack://_N_E",
+    //       "path": "${workspaceFolder}"
+    //     },
+    //   ],
+    // },
+    {
+      "name": "Next.js: debug full stack (Edge)",
+      "type": "node",
+      "runtimeExecutable": "C:\\Users\\pat\\.deno\\bin\\deno.EXE",
+      "request": "launch",
+      "runtimeArgs": ["run", "-A", "dev"],
+      "skipFiles": ["<node_internals>/**"],
+      "env": {
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0",
+        "NODE_ENV": "development"
+      },
+      "serverReadyAction": {
+        "action": "debugWithEdge",
+        "killOnServerStop": true,
+        "pattern": ".*listening at.+(https?://.+)",
+        "uriFormat": "%s",
+        "webRoot": "${workspaceFolder}"
+      }
+    }
+  ],
+  "compounds": [
+    // {
+    //   "name": "Next.js: debug full stack (Firefox)",
+    //   "configurations": [
+    //     "Next.js: debug server-side",
+    //     "Next.js: debug client-side (Firefox)"
+    //   ],
+    //   "stopAll": true
+    // },
+    {
+      "name": "Next.js: debug full stack (Chrome)",
+      "configurations": [
+        "Next.js: debug server-side",
+        "Next.js: debug client-side"
+      ],
+      "stopAll": true
+    }
+  ]
+}
