@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import resume from "../../assets/RESUME.jpg";
 import Image from "next/image";
 
@@ -32,15 +32,16 @@ export default function AboutSection() {
         About
       </h1>
       <p className="text-justify">
-        I am a researcher of new technologies and a programming language
-        enthusiast which fires my drive to learn any programming language. What
-        I learn, I apply in my personal projects and work-related tasks which is
-        an asset to any company. I aspire to become a software developer which
-        is proficient creating any program, may it be low-level programs,
-        web-apps or local apps. I am fond of both high and low-level programming
-        languages/tools for building applications or servers. Also, I am
-        currently enhancing my skills both in the front and backend side so that
-        I could apply it in my daily life.
+        I'm a DevOps and software development engineer with a generalist
+        background—I work comfortably across the stack, from low-level systems
+        and local apps to web applications and infrastructure. As someone who
+        loves learning new languages, tools, and frameworks, I bring a
+        jack-of-all-trades mindset to both personal projects and professional
+        work. I'm currently leaning deeper into DevOps—automation,
+        infrastructure-as-code, and platform engineering—with my homelab as a
+        space to keep sharpening those skills—while remaining just as open to
+        hands-on software development roles. The two disciplines overlap, and I
+        enjoy working where they meet.
       </p>
       <div className="flex max-md:flex-col gap-4 items-center">
         <div className="avatar">
@@ -50,7 +51,7 @@ export default function AboutSection() {
         </div>
         <div className="container space-y-4">
           <p className="text-2xl font-bold max-md:text-center">
-            CI Engineer & Software Developer
+            DevOps Engineer & Software Developer
           </p>
           <p className="italic max-md:text-center">
             &quot;Don&apos;t regret what you did but regret what you didn&apos;t
@@ -63,10 +64,10 @@ export default function AboutSection() {
               </li>
               <li>
                 <span className="font-semibold">Website:</span>{" "}
-                <a href="https://pat0026.github.io/WebsitePortfolio/">
+                <a href="https://pat0026.github.io/pat-website/">
                   pat0026.github.io/
                   <wbr />
-                  pat-portfolio
+                  pat-website
                 </a>
               </li>
               <li>
@@ -98,13 +99,11 @@ export default function AboutSection() {
         </div>
       </div>
       <p className="text-justify">
-        If I don&apos;t know the solution to the problem I will not hesitate to
-        tell you that I don&apos;t know the answer but I assure you that I will
-        find a way to know what it is in the future. I&apos;m aspiring to join a
-        company that values personal growth, work-life balance and have a
-        healthy environment which I could bond with diverse peers. A company
-        that will show me to become a better software developer. That is why I
-        strive to enhancing my skills towards any company I work with.
+        If I don't know the answer to a problem, I'll say so—but I'll also make
+        sure I learn it. That curiosity is what pushes me to keep growing, which
+        is exactly the kind of environment I'm looking for: a company that
+        values personal development, work-life balance, and a healthy culture
+        where I can bond with diverse peers and become a better engineer.
       </p>
     </div>
   );

@@ -17,10 +17,8 @@ export default function BackgroundSection() {
         environments in different fields. This shows my perseverance in in any
         job.
       </p>
-      <div className="flex max-md:flex-col gap-8">
-        <Education />
-        <Work />
-      </div>
+      <Education />
+      <Work />
     </div>
   );
 }

@@ -1,6 +1,14 @@
+import { basePath } from "@/lib/constants";
 export default function HeroSection() {
   return (
-    <div className="hero min-h-screen bg-[url(/pat-website/images/Portfolio_bg.jpg)] bg-fixed bg-[right_-4rem_center]  md:bg-center">
+    <div
+      className="hero min-h-screen bg-[image:var(--hero-bg)] bg-fixed bg-[right_-4rem_center] md:bg-center"
+      style={
+        {
+          "--hero-bg": `url(${basePath}/images/Portfolio_bg.jpg)`,
+        } as React.CSSProperties
+      }
+    >
       <div className="hero-overlay  bg-blend-multiply"></div>
       <div className="hero-content text-slate-100 text-center text-shadow-md text-shadow-slate-600 ">
         <div className="max-w-md ">

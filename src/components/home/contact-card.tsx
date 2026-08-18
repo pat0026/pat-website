@@ -1,4 +1,3 @@
-import React from "react";
 import { contactInfosWithIcon } from "../../data/contact-info";
 import ContactInfo from "./contact-info";
 

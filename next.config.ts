@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
+import { basePath } from "@/lib/constants";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  basePath: "/pat-website",
+  basePath,
   output: "export",
   images: {
     unoptimized: true,

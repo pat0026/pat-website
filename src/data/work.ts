@@ -2,14 +2,27 @@ import WorkItem from "@/type/work"
 
 const workItems: readonly WorkItem[] = [
   {
+    subject: "DevOps Engineer",
+    year: "Mar. 2,2026 - Jun. 24, 2026",
+    location: "iRely-Philippines, Inc.",
+    description_list: [
+      "Design, implement, and maintain robust automated CI/CD pipelines using Azure DevOps and GitHub Actions to accelerate secure software deployment.",
+      "Utilize advanced PowerShell and Shell/Bash scripting for infrastructure provisioning, configuration management, and operational security automation",
+      "Administer and support both Linux and Windows operating environments.",
+      "Manage the full lifecycle of containerized applications using Docker, ensuring security hardening best practices",
+      "Manage access control and security permissions using Role-Based Access Control (RBAC)."
+
+    ],
+  },
+  {
     subject: "Senior Software Engineer",
-    year: "Dec. 10,2024 - Present",
-    location: "eData Services Inc.",
+    year: "Dec. 10,2024 - Feb. 10,2026",
+    location: "eData Services Phils., Inc.",
     description_list: [
       "Design and develop application interfaces as small standalone functionality and as part of larger integrated applications.",
       "Develop SQL functions and design database objects to support application functionality.",
       "Working knowledge of C#, Javascript, Typescript and React",
-      "oftware Support and Development with high customer service and technical expertise, which can work independently with less supervision",
+      "Software Support and Development with high customer service and technical expertise, which can work independently with less supervision",
     ],
   },
   {
